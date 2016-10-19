@@ -44,16 +44,16 @@ public class TestApi {
 			prop.load(input);
 
 			String key = prop.getProperty("api-key");
-
+String imgurl="https://www.daysoftheyear.com/wp-content/images/hot-dog-day2-e1437733838777-808x380.jpg";
 			try {
-				// System.out.println(api.sendRequest(key,"food","http://www.2sfg.com/globalassets/corporate/home-page/hero-home-6-rice-desktop.jpg"));
-				// System.out.println(api.sendRequest(key,"food","http://www.2sfg.com/globalassets/corporate/home-page/hero-home-6-rice-desktop.jpg"));
-				// System.out.println(api.sendRequest(key,"food","http://www.2sfg.com/globalassets/corporate/home-page/hero-home-6-rice-desktop.jpg"));
-				// System.out.println(api.sendRequest(key,"food","http://www.2sfg.com/globalassets/corporate/home-page/hero-home-6-rice-desktop.jpg"));
-				System.out.println(api.sendRequest(key, "food",
-						"https://www.daysoftheyear.com/wp-content/images/hot-dog-day2-e1437733838777-808x380.jpg"));
+				System.out.println(api.sendRequest(key, "scene",
+						imgurl));
 				System.out.println(api.sendRequest(key, "concept",
-						"https://www.daysoftheyear.com/wp-content/images/hot-dog-day2-e1437733838777-808x380.jpg"));
+						imgurl));
+				System.out.println(api.sendRequest(key, "object",
+						imgurl));
+				System.out.println(api.sendRequest(key, "food",
+						imgurl));
 
 			} catch (ClientProtocolException e) {
 				// TODO Auto-generated catch block
